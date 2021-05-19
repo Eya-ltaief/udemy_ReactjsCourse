@@ -1,0 +1,106 @@
+body{
+  font-family :'Source Sans Pro', sans-serif;
+}
+.MainContainer{
+  padding : 4% 12%;
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  align-items:center;
+}
+.ProductPreview{
+  width :50%;
+  position: relative;
+}
+.ProductPreview >img{
+  width :100%;
+}
+.ProductData{
+  width: 50%;
+}
+.ProductTitle{
+  font-size: 48px;
+  font-weight: 500;
+}
+.ProductDescription{
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color : rgba(0,0,0,0.8)
+}
+.productImage{
+  width: 100%;
+  max-width: 80px;
+  border: 2px solid transparent;
+  margin-right: 12px;
+  cursor : pointer;
+}
+.selectedProduct{
+  border : 2px solid teal
+}
+.heading{
+  font-weight: 400;
+}
+.featureItem{
+  min-width: 80px;
+  background-color: gainsboro;
+  border-radius: 8px;
+  border:0;
+  text-align: center;
+  margin-right: 12px;
+  cursor:pointer;
+  padding: 12px 24px;
+  font-weight: 500;
+}
+.selected{
+  color: white;
+  background-color: gray;
+}
+.time{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: 600;
+  color: white;
+}
+.heart{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: 800;
+
+}
+.heart >i{
+  font-size: 35px;
+  color: red;
+  animation: beat 1s infinite;
+}
+.heart >span{
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+}
+.primarybtn{
+  min-width: 80px;
+  margin-top: 10px;
+  background-color: teal;
+  border-radius: 8px;
+  border:0;
+  text-align: center;
+  margin-right: 12px;
+  cursor:pointer;
+  padding: 12px 24px;
+  font-weight: 500;
+}
+@keyframes beat{
+  0%{
+    transform : scale(1,1)
+  }
+  50%{
+    transform : scale(1.2,1.2)
+  }
+}
